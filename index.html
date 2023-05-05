@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo-Avançada</title>
     <!-- CSS do projeto -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./CSS/style.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
@@ -20,7 +20,7 @@
         <header>
             <h1>Todo-List Avançado</h1>
         </header>
-        <form class="todo-form">
+        <form id="todo-form">
             <p>Adicione a sua tarefa:</p>
             <div class="form-control">
                 <input type="text" id="todo-input" placeholder="O que você irá fazer?">
@@ -29,7 +29,7 @@
                 </button>
             </div>
         </form>
-        <form id="edit-form">
+        <form id="edit-form" class="hide">
             <p>Edite a sua tarefa:</p>
             <div class="form-control">
                 <input type="text" id="edit-input">
@@ -59,8 +59,20 @@
             </div>
         </div>
         <div id="todo-list">
-            <div class="todo">
+            <div class="todo done">
                 <h3>Estou fazendo alguma coisa...</h3>
+                <button class="finish-todo">
+                    <i class="fa-solid fa-check"></i>
+                </button>
+                <button class="edit-todo">
+                    <i class="fa-solid fa-pen"></i>
+                </button>
+                <button class="remove-todo">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="todo">
+                <h3>Estudar JavaScript</h3>
                 <button class="finish-todo">
                     <i class="fa-solid fa-check"></i>
                 </button>
